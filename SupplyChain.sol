@@ -7,6 +7,7 @@ import "../access/DistributorRole.sol";
 import "../access/RetailerRole.sol";
 import "../access/ConsumerRole.sol";
 
+
 // Define a contract 'Supplychain'
 contract SupplyChain is
     Ownable,
@@ -21,11 +22,14 @@ contract SupplyChain is
     // Define a variable called 'productCode' for Universal Product Code (productCode)
     uint256 productCode;
 
+
     // Define a variable called 'stockUnit' for Stock Keeping Unit (stockUnit)
     uint256 stockUnit;
 
+
     // Define a public mapping 'items' that maps the productCode to an Item.
     mapping(uint256 => Item) items;
+
 
     // Define a public mapping 'itemsHistory' that maps the productCode to an array of TxHash,
     // that track its journey through the supply chain -- to be sent from DApp.
@@ -47,6 +51,7 @@ contract SupplyChain is
         ForSaleByRetailer, // 11
         PurchasedByConsumer // 12
     }
+
 
     State constant defaultState = State.ProduceByFarmer;
 
@@ -92,11 +97,13 @@ contract SupplyChain is
     event ForSaleByRetailer(uint256 productCode); //12
     event PurchasedByConsumer(uint256 productCode); //13
 
+
     // Define a modifer that checks to see if _msgSender() == owner of the contract
     modifier only_Owner() {
         require(_msgSender() == owner);
         _;
     }
+
 
     // Define a modifer that verifies the Caller
     modifier verifyCaller(address _address) {
@@ -148,6 +155,7 @@ contract SupplyChain is
         require(items[_productCode].itemState == State.ProcessedByDistributor);
         _;
     }
+
 
     modifier packagedByDistributor(uint256 _productCode) {
         require(items[_productCode].itemState == State.PackageByDistributor);
@@ -204,7 +212,7 @@ contract SupplyChain is
         return payable(address(uint160(x)));
     }
 
-    /*
+    /* FOURTEEN STEPS in THE CHAIN
  1st step in supplychain
  Allows farmer to create product
 */
@@ -308,6 +316,7 @@ Allows distributor to purchase product
         items[_productCode].itemState = State.ShippedByFarmer; // update state
         emit ShippedByFarmer(_productCode);
     }
+
 
     /*
   5th step in supplychain
@@ -430,6 +439,7 @@ Allows distributor to purchase product
         items[_productCode].productPrice = _price;
         emit ForSaleByRetailer(_productCode);
     }
+
 
     /*
   13th step in supplychain
