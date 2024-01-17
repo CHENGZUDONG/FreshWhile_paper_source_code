@@ -12,7 +12,7 @@ Freshwhile is a groundbreaking system that leverages Blockchain and IoT technolo
 
 ## Installation
 1. Clone the repository:
-git clone https://github.com/your-github-username/freshwhile.git
+git clone https://github.com/CHENGZUDONG/FreshWhile_paper_source_code
 2. Open the project in Android Studio.
 3. Sync the project with Gradle files.
 4. Run the application on your device or emulator.
