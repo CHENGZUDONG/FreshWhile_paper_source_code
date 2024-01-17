@@ -63,6 +63,7 @@ public class RegisterProduce extends AppCompatActivity {
         });
     }
 
+    
     private void saveDataToDatabase() {
         String produceId = freshProduceIdEditText.getText().toString();
         String category = getSelectedRadioButtonText();
