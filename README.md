@@ -1,7 +1,9 @@
-# Freshwhile: Blockchain-IoT System for Fresh Produce Traceability
+# Blockchain-IoT System for Fresh Produce Traceability
 
-## Introduction
-Freshwhile is a groundbreaking system that leverages Blockchain and IoT technologies to trace the delivery of fresh produce from the farm to the consumer. This system aims to ensure the freshness of produce by tracking environmental conditions during delivery and calculating the produce's freshness based on its best before use date, temperature, and humidity.
+## Design and implement  FreshWhile
+
+Novel blockchain-based mobile system prototype that facilitates complete end-to-end tracking of the fresh AgriFood supply chain logistics. By integrating blockchain and Internet of Things (IoT) technologies, FreshWhile offers an end-to-end traceability solution, guaranteeing the freshness of the produce from `farm to fork'. Although the architecture is designed for ease of deployment, FreshWhile demonstrates low-cost, low-power, and low-complexity characteristics, making it suitable for real-world mobile applications. Furthermore, we propose a unique approach to determine the freshness of the product considering the best date before use, along with the temperature and humidity of the product during transit. We explore and exploit blockchain advances and grasp potential advantages to improve the performance of AgriFood logistics. The proposed blockchained AgriFood system presents a promising opportunity to boost transparency and traceability, decrease fraud and waste, and enhance AgriFood safety. Our implementation of the FreshWhile concept in Android is at good technical readiness level (TRL) and readily available for mobile devices.
+Several TRL challenges have been addressed during both implementation and design, including implementation cost, scalability, and interoperability. The evaluation of the proposed FreshWhile architecture and the mobile application validates key aspects considered during design and presents impeding research directions with recommendations.
 
 ## Features
 - **Blockchain Integration**: Ensures secure and transparent tracking of produce.
