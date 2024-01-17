@@ -44,4 +44,3 @@ We welcome contributions to improve Freshwhile. To contribute:
 ## Contact
 For any queries, please reach out to (dongc@deakin.edu.au).
 
-*Note: The GitHub repository URL and contact email are placeholders and should be replaced with actual project details.*
